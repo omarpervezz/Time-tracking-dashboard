@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@1,500&family=Quattrocento:wght@400;700&family=Rubik:wght@300;400;500&family=Russo+One&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --smallHeading: #f7f7ff;
+}
+
+body {
+    background-color: rgb(15, 20, 36);
+    min-height: 100vh;
+    font-family: Rubik, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h2,
+h3,
+span,
+h1,
+p {
+    color: rgb(247, 247, 255);
+}
+
+
+/* wrapper css */
+
+.wrapper {
+    padding-top: 30px;
+}
+
+.dhashboard .content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* userProfile css */
+
+.dhashboard .content .userProfile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgb(28, 31, 74);
+    margin-right: 34px;
+    height: 100%;
+    border-radius: 17px;
+}
+
+.dhashboard .content .userProfile .details {
+    background-color: rgb(88, 71, 235);
+    height: 100%;
+    padding: 0px 80px 59.9px 32px;
+    border-radius: 17px;
+    width: 100%;
+}
+
+.dhashboard .content .userProfile .details img {
+    width: 69px;
+    height: 69px;
+    margin: 20px 0px 33px;
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.dhashboard .content .userProfile .details span {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 14px;
+    display: inline-block;
+    color: rgb(189, 193, 255);
+}
+
+.dhashboard .content .userProfile .details h2 {
+    font-weight: 300;
+    overflow-wrap: break-word;
+    font-size: 34px;
+}
+
+.dhashboard .content .userProfile .userReportActivites {
+    padding: 15px 23px;
+}
+
+.dhashboard .content .userProfile .userReportActivites div {
+    margin: 12.5px 0px;
+}
+
+.dhashboard .content .userProfile .userReportActivites div span {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* userActivites css */
+
+.dhashboard .content .userActivites {
+    display: flex;
+    flex-direction: column;
+}
+
+ :is( .userActivites) .userActivitesTop,
+.userActivitesBottom {
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+:is( .userActivites) .work {
+    background-color: hsl(15, 100%, 70%);
+}
+
+:is( .userActivites) .play {
+    background-color: hsl(195, 74%, 62%);
+}
+
+:is( .userActivites) .study {
+    background-color: hsl(348, 100%, 68%);
+}
+
+:is(.userActivites) .excercise {
+    background-color: hsl(145, 58%, 55%);
+}
+
+:is( .userActivites) .social {
+    background-color: hsl(264, 64%, 52%);
+}
+
+:is( .userActivites) .selfCare {
+    background-color: hsl(43, 84%, 65%);
+}
+
+ :is( .userActivites) .userActivitesBox {
+    min-width: 250px;
+    max-width: 250px;
+    flex: 1 1 250px;
+    margin: 0 10px 26px 10px;
+    border-radius: 15px;
+}
+
+.userActivitesBox .userActivitesImageInfo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ :is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox img.userAllActivites {
+    width: 45px;
+    height: 45px;
+    margin-right: 17px;
+}
+
+:is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox .bodyBg {
+    padding-bottom: 36px;
+    background: hsl(235, 46%, 20%);
+    padding-top: 22px;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+:is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox .userActivitesInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+:is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox .userActivitesInfo img {
+    cursor: pointer;
+}
+
+:is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox .userActivitesInfo h3 {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--smallHeading);
+}
+
+:is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox .userActivitesHours h1 {
+    font-size: 33px;
+    font-weight: 300;
+    padding-left: 34px;
+    margin-top: 17px;
+}
+
+:is( .userActivitesTop,
+.userActivitesBottom) .userActivitesBox .userActivitesHours p {
+    font-size: 14px;
+    padding-left: 36px;
+    margin-top: 10px;
+    color: rgb(189, 193, 255);
+    font-weight: 400;
+}
+
+
+/* time tracking dhashboard css */
+
+@media only screen and (max-width: 1050px) {
+    .dhashboard .content .userProfile {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .dhashboard .content .userProfile .userReportActivites {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
