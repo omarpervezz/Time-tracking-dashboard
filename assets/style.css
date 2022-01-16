@@ -95,21 +95,15 @@ p {
 .dhashboard .content .userProfile .userReportActivites div span {
     font-weight: 300;
     font-size: 14px;
+    cursor: pointer;
 }
 
 
 /* userActivites css */
-
-.dhashboard .content .userActivites {
-    display: flex;
-    flex-direction: column;
-}
-
- :is( .userActivites) .userActivitesTop,
-.userActivitesBottom {
+ .userActivites {
     display: flex;
     flex-direction: row;
-    max-width: 1000px;
+    max-width: 815px;
     margin: 0 auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -152,15 +146,13 @@ p {
     justify-content: flex-end;
 }
 
- :is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox img.userAllActivites {
+ :is( .userActivites) .userActivitesBox img.userAllActivites {
     width: 45px;
     height: 45px;
     margin-right: 17px;
 }
 
-:is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox .bodyBg {
+:is( .userActivites) .userActivitesBox .bodyBg {
     padding-bottom: 36px;
     background: hsl(235, 46%, 20%);
     padding-top: 22px;
@@ -170,36 +162,31 @@ p {
     border-bottom-left-radius: 12px;
 }
 
-:is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox .userActivitesInfo {
+:is( .userActivites) .userActivitesBox .userActivitesInfo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 0 40px;
 }
 
-:is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox .userActivitesInfo img {
+:is( .userActivites) .userActivitesBox .userActivitesInfo img {
     cursor: pointer;
 }
 
-:is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox .userActivitesInfo h3 {
+:is( .userActivites) .userActivitesBox .userActivitesInfo h3 {
     font-size: 15px;
     font-weight: 500;
     color: var(--smallHeading);
 }
 
-:is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox .userActivitesHours h1 {
+:is( .userActivites) .userActivitesBox .userActivitesHours h1 {
     font-size: 33px;
     font-weight: 300;
     padding-left: 34px;
     margin-top: 17px;
 }
 
-:is( .userActivitesTop,
-.userActivitesBottom) .userActivitesBox .userActivitesHours p {
+:is( .userActivites) .userActivitesBox .userActivitesHours p {
     font-size: 14px;
     padding-left: 36px;
     margin-top: 10px;
@@ -220,4 +207,7 @@ p {
         justify-content: space-between;
         align-items: center;
     }
+}
+.active{
+    color: #aba5a5;
 }
