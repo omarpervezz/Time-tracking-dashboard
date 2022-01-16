@@ -16,7 +16,7 @@ function userAllData() {
         <div class="bodyBg">
             <div class="userActivitesInfo">
                 <div>
-                    <h3>${user.title}</h3>
+                    <p>${user.title}</p>
                 </div>
                 <div>
                     <img src="./images/icon-ellipsis.svg" alt="ellipsis" class="toggleInfo">
